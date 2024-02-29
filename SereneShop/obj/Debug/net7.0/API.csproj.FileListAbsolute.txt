@@ -76,3 +76,5 @@ D:\SereneShop\SereneShop\obj\Debug\net7.0\refint\API.dll
 D:\SereneShop\SereneShop\obj\Debug\net7.0\API.pdb
 D:\SereneShop\SereneShop\obj\Debug\net7.0\API.genruntimeconfig.cache
 D:\SereneShop\SereneShop\obj\Debug\net7.0\ref\API.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Core.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Core.pdb

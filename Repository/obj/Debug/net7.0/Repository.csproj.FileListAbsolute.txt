@@ -10,3 +10,6 @@ D:\SereneShop\Repository\obj\Debug\net7.0\Repository.dll
 D:\SereneShop\Repository\obj\Debug\net7.0\refint\Repository.dll
 D:\SereneShop\Repository\obj\Debug\net7.0\Repository.pdb
 D:\SereneShop\Repository\obj\Debug\net7.0\ref\Repository.dll
+D:\SereneShop\Repository\bin\Debug\net7.0\Core.dll
+D:\SereneShop\Repository\bin\Debug\net7.0\Core.pdb
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.csproj.CopyComplete
