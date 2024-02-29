@@ -17,7 +17,7 @@ namespace API.Controllers
         [HttpGet("notfound")]
         public ActionResult<Product> GetNotFound() // not found product
         {
-            var product = _storeContext.Products.Find(100);
+            var product = _storeContext.Products.Where(prod => prod.Name == "ss");
             if (product == null)
                 return NotFound(new ApiResponse(404));
             return Ok(product);
