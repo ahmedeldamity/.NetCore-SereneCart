@@ -1,0 +1,12 @@
+D:\SereneShop\Repository\bin\Debug\net7.0\Repository.deps.json
+D:\SereneShop\Repository\bin\Debug\net7.0\Repository.dll
+D:\SereneShop\Repository\bin\Debug\net7.0\Repository.pdb
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.dll
+D:\SereneShop\Repository\obj\Debug\net7.0\refint\Repository.dll
+D:\SereneShop\Repository\obj\Debug\net7.0\Repository.pdb
+D:\SereneShop\Repository\obj\Debug\net7.0\ref\Repository.dll

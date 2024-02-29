@@ -1,0 +1,11 @@
+D:\SereneShop\Core\bin\Debug\net7.0\Core.deps.json
+D:\SereneShop\Core\bin\Debug\net7.0\Core.dll
+D:\SereneShop\Core\bin\Debug\net7.0\Core.pdb
+D:\SereneShop\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SereneShop\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\SereneShop\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\SereneShop\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\SereneShop\Core\obj\Debug\net7.0\Core.dll
+D:\SereneShop\Core\obj\Debug\net7.0\refint\Core.dll
+D:\SereneShop\Core\obj\Debug\net7.0\Core.pdb
+D:\SereneShop\Core\obj\Debug\net7.0\ref\Core.dll

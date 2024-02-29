@@ -1,0 +1,11 @@
+D:\SereneShop\Service\bin\Debug\net7.0\Service.deps.json
+D:\SereneShop\Service\bin\Debug\net7.0\Service.dll
+D:\SereneShop\Service\bin\Debug\net7.0\Service.pdb
+D:\SereneShop\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\SereneShop\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+D:\SereneShop\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+D:\SereneShop\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
+D:\SereneShop\Service\obj\Debug\net7.0\Service.dll
+D:\SereneShop\Service\obj\Debug\net7.0\refint\Service.dll
+D:\SereneShop\Service\obj\Debug\net7.0\Service.pdb
+D:\SereneShop\Service\obj\Debug\net7.0\ref\Service.dll

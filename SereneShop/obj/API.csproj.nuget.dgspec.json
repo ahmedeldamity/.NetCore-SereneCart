@@ -4,14 +4,14 @@
     "D:\\SereneShop\\SereneShop\\API.csproj": {}
   },
   "projects": {
-    "D:\\SereneShop\\SereneShop\\API.csproj": {
+    "D:\\SereneShop\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SereneShop\\SereneShop\\API.csproj",
-        "projectName": "API",
-        "projectPath": "D:\\SereneShop\\SereneShop\\API.csproj",
+        "projectUniqueName": "D:\\SereneShop\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "D:\\SereneShop\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Haitham\\.nuget\\packages\\",
-        "outputPath": "D:\\SereneShop\\SereneShop\\obj\\",
+        "outputPath": "D:\\SereneShop\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Haitham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,7 +40,78 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SereneShop\\SereneShop\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SereneShop\\SereneShop\\API.csproj",
+        "projectName": "API",
+        "projectPath": "D:\\SereneShop\\SereneShop\\API.csproj",
+        "packagesPath": "C:\\Users\\Haitham\\.nuget\\packages\\",
+        "outputPath": "D:\\SereneShop\\SereneShop\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Haitham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\SereneShop\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\SereneShop\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.16, )"
             },
