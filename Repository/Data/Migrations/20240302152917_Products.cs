@@ -5,7 +5,7 @@
 namespace Repository.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class ProductEntities : Migration
+    public partial class Products : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

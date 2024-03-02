@@ -5,6 +5,6 @@ namespace Core.Interfaces.Services
 {
     public interface IAuthService
     {
-        Task<string> CreateTokenAsync(AppUser user, UserManager<AppUser> userManager);
+        Task<string> CreateTokenAsync(AppUser user, UserManager<AppUser> userManager, string Id);
     }
 }

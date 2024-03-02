@@ -1,6 +1,5 @@
 ﻿using API.Dtos;
 using API.Errors;
-using AutoMapper;
 using Core.Entities.Identity_Entities;
 using Core.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -13,17 +12,18 @@ namespace API.Controllers
     public class AccountController : BaseApiController
     {
         private readonly UserManager<AppUser> _userManager;
-        private readonly IMapper _mapper;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IAuthService _authService;
+        private readonly IWishlistService _wishlistService;
 
-        public AccountController(UserManager<AppUser> userManager, IMapper mapper,
-            SignInManager<AppUser> signInManager, IAuthService authService)
+        public AccountController(UserManager<AppUser> userManager, IAuthService authService,
+            SignInManager<AppUser> signInManager, IWishlistService wishlistService)
         {
             _userManager = userManager;
-            _mapper = mapper;
             _signInManager = signInManager;
             _authService = authService;
+            _wishlistService = wishlistService;
+            
         }
 
         [HttpPost("login")]
@@ -45,7 +45,7 @@ namespace API.Controllers
             {
                 DisplayName = user.DisplayName,
                 Email = model.Email,
-                Token = await _authService.CreateTokenAsync(user, _userManager)
+                Token = await _authService.CreateTokenAsync(user, _userManager, user.WishlistId)
             });
         }
 
@@ -57,12 +57,20 @@ namespace API.Controllers
             if (CheckEmailExist(model.Email).Result.Value)
                 return BadRequest(new ApiValidationErrorResponse() { Errors = new string[] { "This email has already been used" } });
 
+            // Create Wishlist
+            var wishlist = await _wishlistService.CreateWishlistAsync();
+
+            if(wishlist is null)
+                return BadRequest(new ApiResponse(400));
+
             var user = new AppUser()
             {
                 DisplayName = model.DisplayName,
                 Email = model.Email,
                 UserName = model.Email.Split('@')[0],
                 PhoneNumber = model.PhoneNumber,
+                Wishlist = wishlist,
+                WishlistId = wishlist.Id
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
@@ -74,7 +82,7 @@ namespace API.Controllers
             {
                 DisplayName = user.DisplayName,
                 Email = model.Email,
-                Token = await _authService.CreateTokenAsync(user, _userManager)
+                Token = await _authService.CreateTokenAsync(user, _userManager, wishlist.Id)
             });
         }
 
@@ -88,7 +96,7 @@ namespace API.Controllers
             {
                 DisplayName = user.DisplayName,
                 Email = user.Email,
-                Token = await _authService.CreateTokenAsync(user, _userManager)
+                Token = await _authService.CreateTokenAsync(user, _userManager, user.WishlistId)
             });
         }
 

@@ -37,6 +37,9 @@ namespace API.ServicesExtension
             // Register AuthService
             services.AddScoped(typeof(IAuthService), typeof(AuthService));
 
+            // Register WishlistService
+            services.AddScoped(typeof(IWishlistService), typeof(WishlistService));
+
             return services;
         }
 

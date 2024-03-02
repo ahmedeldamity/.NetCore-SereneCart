@@ -17,14 +17,13 @@ namespace Service
         {
             _configuration = configuration;
         }
-        public async Task<string> CreateTokenAsync(AppUser user, UserManager<AppUser> userManager)
+        public async Task<string> CreateTokenAsync(AppUser user, UserManager<AppUser> userManager, string Id)
         {
             // Private Claims
-
             var authClaims = new List<Claim>()
             {
                 new Claim(ClaimTypes.GivenName, user.UserName),
-                new Claim("Id", user.Id),
+                new Claim("Id", Id),
                 new Claim(ClaimTypes.Email, user.Email)
             };
 
@@ -48,6 +47,8 @@ namespace Service
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha256Signature)
             );
+
+            
 
             // Create Token And Return It
             return new JwtSecurityTokenHandler().WriteToken(token);

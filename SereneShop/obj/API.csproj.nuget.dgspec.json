@@ -245,6 +245,9 @@
             "projectReferences": {
               "D:\\SereneShop\\Core\\Core.csproj": {
                 "projectPath": "D:\\SereneShop\\Core\\Core.csproj"
+              },
+              "D:\\SereneShop\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\SereneShop\\Repository\\Repository.csproj"
               }
             }
           }

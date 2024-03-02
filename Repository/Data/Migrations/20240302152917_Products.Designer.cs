@@ -11,8 +11,8 @@ using Repository.Data;
 namespace Repository.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240229113030_ProductEntities")]
-    partial class ProductEntities
+    [Migration("20240302152917_Products")]
+    partial class Products
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

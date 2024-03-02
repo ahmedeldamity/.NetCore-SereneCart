@@ -78,6 +78,10 @@ namespace Repository.Identity.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("WishlistId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -87,6 +91,9 @@ namespace Repository.Identity.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("WishlistId")
+                        .IsUnique();
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -129,6 +136,67 @@ namespace Repository.Identity.Migrations
                         .IsUnique();
 
                     b.ToTable("Addresses", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Entities.Wishlist_Entities.Wishlist", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Wishlists");
+                });
+
+            modelBuilder.Entity("Core.Entities.Wishlist_Entities.WishlistItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageCover")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Images")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Quantity")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("RatingsAverage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("WishlistId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("WishlistId");
+
+                    b.ToTable("WishlistItems");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -264,6 +332,17 @@ namespace Repository.Identity.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Core.Entities.Identity_Entities.AppUser", b =>
+                {
+                    b.HasOne("Core.Entities.Wishlist_Entities.Wishlist", "Wishlist")
+                        .WithOne()
+                        .HasForeignKey("Core.Entities.Identity_Entities.AppUser", "WishlistId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Wishlist");
+                });
+
             modelBuilder.Entity("Core.Entities.Identity_Entities.UserAddress", b =>
                 {
                     b.HasOne("Core.Entities.Identity_Entities.AppUser", null)
@@ -271,6 +350,13 @@ namespace Repository.Identity.Migrations
                         .HasForeignKey("Core.Entities.Identity_Entities.UserAddress", "AppUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Core.Entities.Wishlist_Entities.WishlistItem", b =>
+                {
+                    b.HasOne("Core.Entities.Wishlist_Entities.Wishlist", null)
+                        .WithMany("Items")
+                        .HasForeignKey("WishlistId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -328,6 +414,11 @@ namespace Repository.Identity.Migrations
                 {
                     b.Navigation("Address")
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Core.Entities.Wishlist_Entities.Wishlist", b =>
+                {
+                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }

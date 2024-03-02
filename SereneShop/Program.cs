@@ -163,11 +163,6 @@ try
 
     // Migrate IdentityContext
     await _identiyContext.Database.MigrateAsync();
-    // Seeding Data For IdentityDbContext
-    // -- but this seeding function create users, so it need to take object from UserManager not IdentityContext
-    // -- So we will add dependancy injection then ask clr to create object from UserManager
-    var _userManager = services.GetRequiredService<UserManager<AppUser>>();
-    await IdentityContextSeed.SeedUsersAsync(_userManager);
 }
 catch (Exception ex)
 {

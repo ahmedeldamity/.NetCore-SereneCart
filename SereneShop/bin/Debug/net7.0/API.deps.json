@@ -764,7 +764,8 @@
       "Service/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.16"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.16",
+          "Repository": "1.0.0"
         },
         "runtime": {
           "Service.dll": {}

@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Product_Entities;
+using Core.Entities.Wishlist_Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
