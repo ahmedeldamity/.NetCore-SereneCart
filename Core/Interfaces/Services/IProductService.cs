@@ -1,9 +1,5 @@
 ﻿using Core.Entities.Product_Entities;
 using Core.Specifications.ProductSpecifications;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Core.Interfaces.Services

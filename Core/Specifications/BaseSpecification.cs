@@ -1,11 +1,6 @@
 ﻿using Core.Entities;
 using Core.Interfaces.Specifications;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core.Specifications
 {
@@ -15,16 +10,6 @@ namespace Core.Specifications
         public List<Expression<Func<T, object>>> IncludesCriteria { get; set; } = new List<Expression<Func<T, object>>>();
         public Expression<Func<T, object>> OrderBy { get; set; }
         public Expression<Func<T, object>> OrderByDesc { get; set; }
-
-        //public BaseSpecification()
-        //{
-        //    // -- Here WhereCriteria is null
-        //}
-
-        //public BaseSpecification(Expression<Func<T, bool>> whereCriteria)
-        //{
-        //    WhereCriteria = whereCriteria;
-        //}
 
         public int Skip { get; set; }
         public int Take { get; set; }
