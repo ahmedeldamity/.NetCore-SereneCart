@@ -4,6 +4,7 @@ using API.ServicesExtension;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
+using Repository.Identity;
 using StackExchange.Redis;
 
 #region Update Database Problems And Solution
@@ -46,6 +47,12 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(serviceProvider =>
 {
     var connection = builder.Configuration.GetConnectionString("Redis");
     return ConnectionMultiplexer.Connect(connection);
+});
+
+// Identity Store Context
+builder.Services.AddDbContext<IdentityContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
 });
 
 // This Method Has All Application Services

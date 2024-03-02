@@ -1,6 +1,5 @@
 ﻿using Core.Entities.Product_Entities;
 using Core.Specifications.ProductSpecifications;
-using System.Threading.Tasks;
 
 namespace Core.Interfaces.Services
 {
