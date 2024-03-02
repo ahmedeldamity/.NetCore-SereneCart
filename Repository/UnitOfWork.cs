@@ -23,11 +23,10 @@ namespace Repository
             if (!_repositories.ContainsKey(key))
             {
                 var repository = new GenericRepository<T>(_storeContext);
-                _repositories.Add(typeof(T).Name, repository);
+                _repositories.Add(key, repository);
             }
 
             return _repositories[key] as GenericRepository<T>;
-
         }
 
         public async Task<int> CompleteAsync()

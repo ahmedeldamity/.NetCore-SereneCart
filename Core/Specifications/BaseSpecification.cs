@@ -16,14 +16,25 @@ namespace Core.Specifications
         public Expression<Func<T, object>> OrderBy { get; set; }
         public Expression<Func<T, object>> OrderByDesc { get; set; }
 
-        public BaseSpecification()
-        {
-            // -- Here WhereCriteria is null
-        }
+        //public BaseSpecification()
+        //{
+        //    // -- Here WhereCriteria is null
+        //}
 
-        public BaseSpecification(Expression<Func<T, bool>> whereCriteria)
+        //public BaseSpecification(Expression<Func<T, bool>> whereCriteria)
+        //{
+        //    WhereCriteria = whereCriteria;
+        //}
+
+        public int Skip { get; set; }
+        public int Take { get; set; }
+        public bool IsPaginationEnabled { get; set; }
+
+        public void ApplyPagination(int skip, int take)
         {
-            WhereCriteria = whereCriteria;
+            IsPaginationEnabled = true;
+            Skip = skip;
+            Take = take;
         }
     }
 }

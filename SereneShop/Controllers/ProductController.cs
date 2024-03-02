@@ -1,9 +1,9 @@
 ﻿using API.Dtos;
+using API.Helpers;
 using AutoMapper;
 using Core.Entities.Product_Entities;
 using Core.Interfaces.Services;
 using Core.Specifications.ProductSpecifications;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -25,10 +25,10 @@ namespace API.Controllers
             var products = await _productService.GetProductsAsync(specParams);
 
             var productsDto = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
+            
+            var productsCount = await _productService.GetProductCount(specParams);
 
-            //var productsCount = await _productService.GetProductCount(specParams);
-
-            return Ok(productsDto); 
+            return Ok(new PaginationToReturn<ProductToReturnDto>(specParams.PageIndex, specParams.PageSize, productsCount, productsDto)); 
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Service
         }
         public async Task<IReadOnlyList<Product>> GetProductsAsync(ProductSpecificationParameters specParams)
         {
-            var spec = new ProductWithBrandAndCategorySpecifications(specParams);
+            var spec = new ProductWithBrandAndCategorySpecifications(specParams); // to set data in properties which exist in BaseSpecification 
             var products = await _unitOfWork.Repository<Product>().GetAllWithSpecAsync(spec);
             return products;
         }
