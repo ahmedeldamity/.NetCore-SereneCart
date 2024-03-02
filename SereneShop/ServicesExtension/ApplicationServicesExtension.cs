@@ -31,6 +31,9 @@ namespace API.ServicesExtension
             // - Second (easier)
             services.AddAutoMapper(typeof(MappingProfiles));
 
+            // Register Basket Repository
+            services.AddScoped(typeof(IBasketRepository), typeof(BasketRepository));
+
             return services;
         }
 

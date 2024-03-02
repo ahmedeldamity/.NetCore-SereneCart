@@ -82,3 +82,5 @@ D:\SereneShop\SereneShop\bin\Debug\net7.0\AutoMapper.dll
 D:\SereneShop\SereneShop\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\SereneShop\SereneShop\bin\Debug\net7.0\Service.dll
 D:\SereneShop\SereneShop\bin\Debug\net7.0\Service.pdb
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\StackExchange.Redis.dll

@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Core.Entities.Basket_Entities
+﻿namespace API.Dtos
 {
-    public class BasketItem
+    public class BasketItemToReturnDto
     {
         public int Id { get; set; }
 
@@ -16,7 +14,7 @@ namespace Core.Entities.Basket_Entities
 
         public decimal Quantity { get; set; }
 
-        public decimal RatingsAverage { get; set; }    
+        public decimal RatingsAverage { get; set; }
 
         public string Category { get; set; }
 

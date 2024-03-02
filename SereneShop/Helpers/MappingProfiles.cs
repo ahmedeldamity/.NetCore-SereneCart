@@ -1,5 +1,6 @@
 ﻿using API.Dtos;
 using AutoMapper;
+using Core.Entities.Basket_Entities;
 using Core.Entities.Product_Entities;
 using Talabat.APIs.Helpers;
 
@@ -7,8 +8,11 @@ namespace API.Helpers
 {
     public class MappingProfiles: Profile
     {
-        public MappingProfiles()
+        //private readonly IConfiguration _configuration;
+        public MappingProfiles(/*IConfiguration configuration*/)
         {
+            //_configuration = configuration;
+
             CreateMap<Product, ProductToReturnDto>()
                 .ForMember(d => d.Brand, o => o.MapFrom(s => s.Brand))
                 .ForMember(d => d.Category, o => o.MapFrom(s => s.Category))
@@ -21,6 +25,15 @@ namespace API.Helpers
                 // -- the solution of this issue is: instead of using MapFrom I use MapFrom<"class inherit from IValueResolver<sourse, destination, member>">
                 .ForMember(d => d.ImageCover, o => o.MapFrom<ProductImageCoverResolver>())
                 .ForMember(d => d.Images, o => o.MapFrom<ProductImagesResolver>());
+
+            CreateMap<BasketDto, Basket>();
+
+            CreateMap<BasketItemDto, BasketItem>();
+
+            CreateMap<Basket, BasketToReturnDto>();
+
+            CreateMap<BasketItem, BasketItemToReturnDto>();
+
         }
     }
 }
