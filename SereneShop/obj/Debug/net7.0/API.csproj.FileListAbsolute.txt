@@ -84,3 +84,10 @@ D:\SereneShop\SereneShop\bin\Debug\net7.0\Service.dll
 D:\SereneShop\SereneShop\bin\Debug\net7.0\Service.pdb
 D:\SereneShop\SereneShop\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
 D:\SereneShop\SereneShop\bin\Debug\net7.0\StackExchange.Redis.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

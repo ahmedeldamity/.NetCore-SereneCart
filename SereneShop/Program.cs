@@ -1,6 +1,8 @@
 using API.Errors;
 using API.Middlewares;
 using API.ServicesExtension;
+using Core.Entities.Identity_Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
@@ -55,6 +57,23 @@ builder.Services.AddDbContext<IdentityContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
 });
 
+// We need to register three services of identity (UserManager - RoleManager - SignInManager)
+// but we don't need to register all them one by one
+// because we have method (AddIdentity) that will register the three services
+// --- this method has another overload take action to if you need to configure any option of identity
+builder.Services.AddIdentity<AppUser, IdentityRole>(option =>
+{
+    option.Password.RequireLowercase = true;
+    option.Password.RequireUppercase = true;
+    option.Password.RequireDigit = true;
+    option.Password.RequireNonAlphanumeric = true;
+    option.Password.RequiredUniqueChars = 3;
+    option.Password.RequiredLength = 6;
+}).AddEntityFrameworkStores<IdentityContext>();
+// ? this because the three services talking to another Store Services
+// such as (UserManager talk to IUserStore to take all services like createAsync)
+// so we allowed dependency injection to this services too
+
 // This Method Has All Application Services
 builder.Services.AddApplicationServices();
 
@@ -101,6 +120,8 @@ var services = scope.ServiceProvider;
 
 // --> Bring Object Of StoreContext For Update His Migration
 var _storeContext = services.GetRequiredService<StoreContext>();
+// --> Bring Object Of IdentityContext For Update His Migration
+var _identiyContext = services.GetRequiredService<IdentityContext>();
 // --> Bring Object Of ILoggerFactory For Good Show Error In Console    
 var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 
@@ -108,6 +129,14 @@ try
 {
     // Migrate StoreContext
     await _storeContext.Database.MigrateAsync();
+
+    // Migrate IdentityContext
+    await _identiyContext.Database.MigrateAsync();
+    // Seeding Data For IdentityDbContext
+    // -- but this seeding function create users, so it need to take object from UserManager not IdentityContext
+    // -- So we will add dependancy injection then ask clr to create object from UserManager
+    var _userManager = services.GetRequiredService<UserManager<AppUser>>();
+    await IdentityContextSeed.SeedUsersAsync(_userManager);
 }
 catch (Exception ex)
 {
