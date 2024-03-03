@@ -6,5 +6,6 @@ namespace Core.Interfaces.Services
     {
         Task<Wishlist?> CreateWishlistAsync();
         Task<WishlistItem?> AddProductToWishlistAsync(WishlistItem product);
+        Task<WishlistItem?> RemoveProductFromWishlistAsync(WishlistItem product);
     }
 }

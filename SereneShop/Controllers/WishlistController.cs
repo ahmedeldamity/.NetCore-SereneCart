@@ -1,11 +1,8 @@
-﻿using API.Dtos;
-using API.Errors;
-using Core.Entities.Basket_Entities;
+﻿using API.Errors;
 using Core.Entities.Identity_Entities;
 using Core.Entities.Wishlist_Entities;
 using Core.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -56,15 +53,34 @@ namespace API.Controllers
             return Ok(wishlist);
         }
 
+        [Authorize]
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Wishlist>> RemoveProductFromWishlistAsync(int id)
+        {
+            var product = await _identityContext.WishlistItems.FindAsync(id);
+
+            if(product is null)
+                return BadRequest(new ApiResponse(400));
+
+            var returnProduct = await _wishlistService.RemoveProductFromWishlistAsync(product);
+
+            if(returnProduct is null)
+                return BadRequest(new ApiResponse(400));
+
+            var wishlist = await UserWishlist();
+
+            return Ok(wishlist);
+        }
+
         public async Task<Wishlist> UserWishlist()
         {
             var email = User.FindFirstValue(ClaimTypes.Email);
             var user = await _userManager.FindByEmailAsync(email);
             var wishlistItems = await _identityContext.WishlistItems.Where(w => w.WishlistId == user.WishlistId).ToListAsync();
-            var wishlist = await _identityContext.Wishlists.Where(w => w.Id == user.WishlistId).FirstOrDefaultAsync();
+            var wishlist = await _identityContext.Wishlists.FindAsync(user.WishlistId);
             wishlist.Items = wishlistItems;
             return wishlist;
         }
-
+    
     }
 }

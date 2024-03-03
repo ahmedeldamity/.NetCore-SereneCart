@@ -1,7 +1,5 @@
-﻿using Core.Entities.Product_Entities;
-using Core.Entities.Wishlist_Entities;
+﻿using Core.Entities.Wishlist_Entities;
 using Core.Interfaces.Services;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Repository.Identity;
 
 namespace Service
@@ -32,6 +30,18 @@ namespace Service
         public async Task<WishlistItem?> AddProductToWishlistAsync(WishlistItem product)
         {
             await _identityContext.WishlistItems.AddAsync(product);
+
+            var result = await _identityContext.SaveChangesAsync();
+
+            if (result <= 0)
+                return null;
+
+            return product;
+        }
+
+        public async Task<WishlistItem?> RemoveProductFromWishlistAsync(WishlistItem product)
+        {
+            _identityContext.Remove(product);
 
             var result = await _identityContext.SaveChangesAsync();
 
