@@ -394,9 +394,226 @@
     "RatingsAverage": 4.5,
     "BrandId": 3,
     "CategoryId": 1
+  },
+  {
+    "Name": "Cloud 5",
+    "Description": "With enhanced comfort and a well-designed look, On™ Cloud 5 (Men) Shoes bring you a blend of style and utility, perfect for your everyday wear.",
+    "Price": 177.99,
+    "ImageCover": "images/products/cloud_1.jpg",
+    "Images": [ "images/products/cloud_1.jpg,images/products/cloud_2.jpg,images/products/cloud_3.jpg,images/products/cloud_4.jpg" ],
+    "Quantity": 321,
+    "RatingsAverage": 5,
+    "BrandId": 6,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Cloudrift",
+    "Description": "Take home this On® Cloudrift (Men) footwear for enhancing traction from treadmill to treks.",
+    "Price": 322.99,
+    "ImageCover": "images/products/cloudrift_1.jpg",
+    "Images": [ "images/products/cloudrift_1.jpg,images/products/cloudrift_2.jpg,images/products/cloudrift_3.jpg" ],
+    "Quantity": 120,
+    "RatingsAverage": 3,
+    "BrandId": 6,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Cloudswift 3 AD",
+    "Description": "The On® Spartan Joggers offer a sporty fit for those cool mornings where you just need to get outside.",
+    "Price": 233.99,
+    "ImageCover": "images/products/cloudswift_ad_1.jpg",
+    "Images": [ "images/products/cloudswift_ad_1.jpg,images/products/cloudswift_ad_2.jpg,images/products/cloudswift_ad_3.jpg" ],
+    "Quantity": 120,
+    "RatingsAverage": 3,
+    "BrandId": 6,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Focus Long-T",
+    "Description": "Stay cozy and stylish with this versatile and comfortable breathable On™ Focus Long-T shirt.",
+    "Price": 129.99,
+    "ImageCover": "images/products/focus_long_t_1.jpg",
+    "Images": [ "images/products/focus_long_t_1.jpg,images/products/focus_long_t_2.jpg,images/products/focus_long_t_3.jpg,images/products/focus_long_t_4.jpg" ],
+    "Quantity": 320,
+    "RatingsAverage": 4.5,
+    "BrandId": 6,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Charged Commit TR 3",
+    "Description": "Maximize your run in the Under Armour® Charged Commit TR 3, serious training shoes providing breathability, stability, and flexibility Charged Cushioning® midsole.",
+    "Price": 233.99,
+    "ImageCover": "images/products/charged_commit_1.jpg",
+    "Images": [ "images/products/charged_commit_1.jpg,images/products/charged_commit_2.jpg,images/products/charged_commit_3.jpg" ],
+    "Quantity": 21,
+    "RatingsAverage": 5,
+    "BrandId": 7,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Hovr Sonic 6",
+    "Description": "Walk in style and enjoy the comfort of the Under Armour® Hovr Sonic 6 sneakers.",
+    "Price": 433.99,
+    "ImageCover": "images/products/hovr_sonic_1.jpg",
+    "Images": [ "images/products/hovr_sonic_1.jpg,images/products/hovr_sonic_2.jpg,images/products/hovr_sonic_3.jpg" ],
+    "Quantity": 329,
+    "RatingsAverage": 3.5,
+    "BrandId": 7,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Sportstyle Left Chest",
+    "Description": "Everyone makes graphic Ts...but Under Armour makes them better. The fabric we use is light, soft, and quick-drying.",
+    "Price": 192.99,
+    "ImageCover": "images/products/Sportstyle_Left_Chest_1.webp",
+    "Images": [ "images/products/Sportstyle_Left_Chest_1.webp,images/products/Sportstyle_Left_Chest_2.webp,images/products/Sportstyle_Left_Chest_3.webp,images/products/Sportstyle_Left_Chest_4.webp" ],
+    "Quantity": 332,
+    "RatingsAverage": 4.5,
+    "BrandId": 7,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Dynasoft Nitrel v5",
+    "Description": "Make your mark both on and off the trails with the New Balance® Dynasoft Nitrel v5.",
+    "Price": 129.99,
+    "ImageCover": "images/products/dynasoft_nitrel_v5_1.jpg",
+    "Images": [ "images/products/dynasoft_nitrel_v5_1.jpg,images/products/dynasoft_nitrel_v5_2.jpg,images/products/dynasoft_nitrel_v5_3.jpg,images/products/dynasoft_nitrel_v5_4.jpg" ],
+    "Quantity": 990,
+    "RatingsAverage": 4,
+    "BrandId": 5,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Fresh Foam X 1080v12",
+    "Description": "The 1080 is the pinnacle offering from New Balance’s® running lineup. A combination of top-of-the-line performance technology and wide-ranging accessibility offers runners at every level of intensity more comfort over more distance.",
+    "Price": 231.99,
+    "ImageCover": "images/products/fresh_foam_x_1080v12_1.jpg",
+    "Images": [ "images/products/fresh_foam_x_1080v12_1.jpg,images/products/fresh_foam_x_1080v12_2.jpg,images/products/fresh_foam_x_1080v12_3.jpg,images/products/fresh_foam_x_1080v12_4.jpg" ],
+    "Quantity": 342,
+    "RatingsAverage": 5,
+    "BrandId": 5,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Q Speed 1NTRO Long Sleeve",
+    "Description": "Protect yourself from the cold weather in this moisture-wicking and warm New Balance® Q Speed 1Ntro Long Sleeve tee made of polyknit material.",
+    "Price": 219.99,
+    "ImageCover": "images/products/speed_1NTRO_long_sleeve_1.jpg",
+    "Images": [ "images/products/speed_1NTRO_long_sleeve_1.jpg,images/products/speed_1NTRO_long_sleeve_2.jpg,images/products/speed_1NTRO_long_sleeve_3.jpg" ],
+    "Quantity": 822,
+    "RatingsAverage": 3.5,
+    "BrandId": 5,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Men's Torrent 3",
+    "Description": "Utilizing the same PROFLY™ midsole construction for forgiving landings and propulsive toe-offs, the Torrent 3 has been reimagined with a stripped back upper.",
+    "Price": 120.99,
+    "ImageCover": "images/products/torrent_1.jpg",
+    "Images": [ "images/products/torrent_1.jpg,images/products/torrent_2.jpg,images/products/torrent_3.jpg,images/products/torrent_4.jpg" ],
+    "Quantity": 119,
+    "RatingsAverage": 4.5,
+    "BrandId": 4,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Barricade",
+    "Description": "Ace the trends by opting for the adidas® Barricade Shoes, perfect to wear while playing tennis or going out on a casual day out!",
+    "Price": 209.99,
+    "ImageCover": "images/products/barricade_1.jpg",
+    "Images": [ "images/products/barricade_1.jpg,images/products/barricade_2.jpg,images/products/barricade_3.jpg" ],
+    "Quantity": 893,
+    "RatingsAverage": 5,
+    "BrandId": 1,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Crazyflight",
+    "Description": "Stay bouncing on the court with the springy adidas® Crazyflight indoor volleyball sneakers.",
+    "Price": 312.99,
+    "ImageCover": "images/products/crazyflight_1.jpg",
+    "Images": [ "images/products/crazyflight_1.jpg,images/products/crazyflight_2.jpg,images/products/crazyflight_3.jpg,images/products/crazyflight_4.jpg" ],
+    "Quantity": 213,
+    "RatingsAverage": 4,
+    "BrandId": 1,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Cascadia 17",
+    "Description": "Walk or run faster than ever without slipping off by wearing Brooks® Cascadia 17 footwear. The shoes have a slightly raised rounded toe and heel pull tab.",
+    "Price": 190.99,
+    "ImageCover": "images/products/cascadia_1.jpg",
+    "Images": [ "images/products/cascadia_1.jpg,images/products/cascadia_2.jpg,images/products/cascadia_3.jpg,images/products/cascadia_4.jpg" ],
+    "Quantity": 439,
+    "RatingsAverage": 5,
+    "BrandId": 2,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Trace 3",
+    "Description": "Keep your pace consistent from dawn to dusk by wearing Brooks® Trace 3 sneakers. The sneakers feature a rounded toe and lace closure. It has a heel pull-on tab for easy on and off.",
+    "Price": 290.99,
+    "ImageCover": "images/products/trace_1.jpg",
+    "Images": [ "images/products/trace_1.jpg,images/products/trace_2.jpg,images/products/trace_3.jpg,images/products/trace_4.jpg" ],
+    "Quantity": 320,
+    "RatingsAverage": 3,
+    "BrandId": 2,
+    "CategoryId": 2
+  },
+  {
+    "Name": "High Point Short Sleeve",
+    "Description": "A reliable and high-performance option for trail runners, the BROOKS® High Point Short Sleeve tee offers exceptional comfort and functionality.",
+    "Price": 130.99,
+    "ImageCover": "images/products/high_point_short_sleeve_1.jpg",
+    "Images": [ "images/products/high_point_short_sleeve_1.jpg,images/products/high_point_short_sleeve_2.jpg,images/products/high_point_short_sleeve_3.jpg,images/products/high_point_short_sleeve_4.jpg" ],
+    "Quantity": 211,
+    "RatingsAverage": 3.5,
+    "BrandId": 2,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Luxe Joggers",
+    "Description": "Unleash the luxury of comfort with Brooks® Luxe Joggers, where style meets performance! Crafted from super soft and breathable fabric, these joggers offer a buttery smooth feel and optimal breathability.",
+    "Price": 212.99,
+    "ImageCover": "images/products/Luxe_joggers_1.jpg",
+    "Images": [ "images/products/Luxe_joggers_1.jpg,images/products/Luxe_joggers_2.jpg,images/products/Luxe_joggers_3.jpg,images/products/Luxe_joggers_4.jpg" ],
+    "Quantity": 920,
+    "RatingsAverage": 2.5,
+    "BrandId": 2,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Notch Thermal Long Sleeve 2.0",
+    "Description": "Get the Brooks Notch Thermal Long Sleeve 2.0® tee for the perfect addition to your winter closet.",
+    "Price": 123.99,
+    "ImageCover": "images/products/Notch_Thermal_Long_Sleeve_2.0_1.jpg",
+    "Images": [ "images/products/Notch_Thermal_Long_Sleeve_2.0_1.jpg,images/products/Notch_Thermal_Long_Sleeve_2.0_2.jpg,images/products/Notch_Thermal_Long_Sleeve_2.0_3.jpg" ],
+    "Quantity": 744,
+    "RatingsAverage": 5,
+    "BrandId": 2,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Spartan Joggers",
+    "Description": "The Brooks® Spartan Joggers offer a sporty fit for those cool mornings where you just need to get outside.",
+    "Price": 164.99,
+    "ImageCover": "images/products/Spartan_joggers_1.jpg",
+    "Images": [ "images/products/Spartan_joggers_1.jpg,images/products/Spartan_joggers_2.jpg,images/products/Spartan_joggers_3.jpg,images/products/Spartan_joggers_4.jpg" ],
+    "Quantity": 122,
+    "RatingsAverage": 3.5,
+    "BrandId": 2,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Spartan Pants",
+    "Description": "Spruce up your casually chill fits with the Brooks® Spartan Pants featuring a classic encased elastic fleece pant with side hand pockets with zip-closures.",
+    "Price": 139.99,
+    "ImageCover": "images/products/Spartan_Pants_1.jpg",
+    "Images": [ "images/products/Spartan_Pants_1.jpg,images/products/Spartan_Pants_2.jpg,images/products/Spartan_Pants_3.jpg,images/products/Spartan_Pants_4.jpg" ],
+    "Quantity": 673,
+    "RatingsAverage": 4,
+    "BrandId": 2,
+    "CategoryId": 1
   }
+
 ]
-  
-  
-  
-  

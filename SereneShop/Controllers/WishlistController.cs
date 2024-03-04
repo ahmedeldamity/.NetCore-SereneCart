@@ -36,18 +36,16 @@ namespace API.Controllers
         [HttpPost]  
         public async Task<ActionResult<Wishlist>> AddProductToWishlist(WishlistItem wishlistItem)
         {
-            var email = User.FindFirstValue(ClaimTypes.Email);
-            var user = await _userManager.FindByEmailAsync(email);
-            wishlistItem.WishlistId = user.WishlistId;
+            var wishlist = await UserWishlist();
+
+            if (wishlist is null)
+                return BadRequest(new ApiResponse(400));
+
+            wishlistItem.WishlistId = wishlist.Id;
 
             var product = await _wishlistService.AddProductToWishlistAsync(wishlistItem);
 
             if(product is null)
-                return BadRequest(new ApiResponse(400));
-
-            var wishlist = await UserWishlist();
-
-            if (wishlist is null)
                 return BadRequest(new ApiResponse(400));
 
             return Ok(wishlist);
@@ -76,9 +74,7 @@ namespace API.Controllers
         {
             var email = User.FindFirstValue(ClaimTypes.Email);
             var user = await _userManager.FindByEmailAsync(email);
-            //var wishlistItems = await _identityContext.WishlistItems.Where(w => w.WishlistId == user.WishlistId).ToListAsync();
             var wishlist = await _identityContext.Wishlists.Include(I => I.Items).FirstOrDefaultAsync((prod) => prod.Id == user.WishlistId);
-            //wishlist.Items = wishlistItems;
             return wishlist;
         }
     
