@@ -160,6 +160,8 @@ try
 {
     // Migrate StoreContext
     await _storeContext.Database.MigrateAsync();
+    // Seeding Data For StoreContext
+    await StoreContextSeed.SeedProductDataAsync(_storeContext);
 
     // Migrate IdentityContext
     await _identiyContext.Database.MigrateAsync();

@@ -76,9 +76,9 @@ namespace API.Controllers
         {
             var email = User.FindFirstValue(ClaimTypes.Email);
             var user = await _userManager.FindByEmailAsync(email);
-            var wishlistItems = await _identityContext.WishlistItems.Where(w => w.WishlistId == user.WishlistId).ToListAsync();
-            var wishlist = await _identityContext.Wishlists.FindAsync(user.WishlistId);
-            wishlist.Items = wishlistItems;
+            //var wishlistItems = await _identityContext.WishlistItems.Where(w => w.WishlistId == user.WishlistId).ToListAsync();
+            var wishlist = await _identityContext.Wishlists.Include(I => I.Items).FirstOrDefaultAsync((prod) => prod.Id == user.WishlistId);
+            //wishlist.Items = wishlistItems;
             return wishlist;
         }
     

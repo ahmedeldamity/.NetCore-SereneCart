@@ -14,8 +14,8 @@ namespace API.Helpers
             //_configuration = configuration;
 
             CreateMap<Product, ProductToReturnDto>()
-                .ForMember(d => d.Brand, o => o.MapFrom(s => s.Brand))
-                .ForMember(d => d.Category, o => o.MapFrom(s => s.Category))
+                .ForMember(d => d.Brand, o => o.MapFrom(s => s.Brand.Name))
+                .ForMember(d => d.Category, o => o.MapFrom(s => s.Category.Name))
                 // -- We wanted to bring configuration to bring "ApiBaseUrl From appsetting.json 
                 // -- but this isn't work because when we register automapper in program class 
                 // -- it create this class with parameter less constractor 

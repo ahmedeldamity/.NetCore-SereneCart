@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "Adidas",
+    "ImagePath": "images/brands/Adidas.jpg"
+  },
+  {
+    "Name": "Brooks",
+    "ImagePath": "images/brands/Brooks.jpg"
+  },
+  {
+    "Name": "Cole Haan",
+    "ImagePath": "images/brands/Cole_Haan.jpg"
+  },
+  {
+    "Name": "Hoka",
+    "ImagePath": "images/brands/Hoka.jpg"
+  },
+  {
+    "Name": "New Balance",
+    "ImagePath": "images/brands/New_Balance.png"
+  },
+  {
+    "Name": "On",
+    "ImagePath": "images/brands/On.jpg"
+  },
+  {
+    "Name": "Under Armour",
+    "ImagePath": "images/brands/Under_Armour.jpg"
+  }
+]

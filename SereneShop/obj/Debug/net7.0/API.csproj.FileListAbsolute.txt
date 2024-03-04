@@ -91,3 +91,4 @@ D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFr
 D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 D:\SereneShop\SereneShop\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\SereneShop\SereneShop\bin\Debug\net7.0\API.staticwebassets.runtime.json

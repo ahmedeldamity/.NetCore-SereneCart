@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\SereneShop\\SereneShop\\wwwroot\\images\\brands\\Adidas.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\Adidas.jpg"
+    },
+    {
+      "Id": "D:\\SereneShop\\SereneShop\\wwwroot\\images\\brands\\Brooks.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\Brooks.jpg"
+    },
+    {
+      "Id": "D:\\SereneShop\\SereneShop\\wwwroot\\images\\brands\\Cole_Haan.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\Cole_Haan.jpg"
+    },
+    {
+      "Id": "D:\\SereneShop\\SereneShop\\wwwroot\\images\\brands\\Hoka.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\Hoka.jpg"
+    },
+    {
+      "Id": "D:\\SereneShop\\SereneShop\\wwwroot\\images\\brands\\New_Balance.png",
+      "PackagePath": "staticwebassets\\images\\brands\\New_Balance.png"
+    },
+    {
+      "Id": "D:\\SereneShop\\SereneShop\\wwwroot\\images\\brands\\On.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\On.jpg"
+    },
+    {
+      "Id": "D:\\SereneShop\\SereneShop\\wwwroot\\images\\brands\\Under_Armour.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\Under_Armour.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
