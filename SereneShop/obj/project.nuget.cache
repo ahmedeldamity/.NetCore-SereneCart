@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "th8i9d1xp9koDNIC9MnzdqDkWHyAeWXaaljk1DGxzDcx+Xuw2Vl9F+BNnPdM5+ArZrY/dVOq6MNa/UTlC/x4WA==",
+  "dgSpecHash": "FP6vrIZ+SQ42+ie27S78FI9vLT+hjF6lPHszm9RSP10sfnKI10MXTMku37H1fwjWa2qW/3qnG2gqJYAgQu+pDg==",
   "success": true,
   "projectFilePath": "D:\\SereneShop\\SereneShop\\API.csproj",
   "expectedPackageFiles": [
@@ -52,8 +52,10 @@
     "C:\\Users\\Haitham\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Haitham\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\stackexchange.redis\\2.7.27\\stackexchange.redis.2.7.27.nupkg.sha512",
+    "C:\\Users\\Haitham\\.nuget\\packages\\stripe.net\\43.17.0\\stripe.net.43.17.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

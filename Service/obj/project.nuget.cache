@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7qAHQR6Ae+EexrkAnvU1fPoDzPp+gLEUO453HvP7nYHDtHgQLu6p2j73yKQER8id0QRhXadDWS2JUaNLbmJluA==",
+  "dgSpecHash": "qwhPfK45xLg+IyzkhONNvDQP5/FEEM5VB9B9LhWcAZjqoX+08vPOdyDPXFLcU1XMRLtMebxoYGLL7iW2q3kivQ==",
   "success": true,
   "projectFilePath": "D:\\SereneShop\\Service\\Service.csproj",
   "expectedPackageFiles": [
@@ -42,8 +42,10 @@
     "C:\\Users\\Haitham\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Haitham\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\stackexchange.redis\\2.7.27\\stackexchange.redis.2.7.27.nupkg.sha512",
+    "C:\\Users\\Haitham\\.nuget\\packages\\stripe.net\\43.17.0\\stripe.net.43.17.0.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\Haitham\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
